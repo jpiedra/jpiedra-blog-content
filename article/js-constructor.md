@@ -9,6 +9,7 @@ This first installment in a series discussing various JavaScript design patterns
 
 <!--more-->
 
+
 <h2>Object Literals</h2>
 
 Those of us who write JavaScript are familiar with the fastest way of creating an object, assinging an <i>object literal</i> to a variable:

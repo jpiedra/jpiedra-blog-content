@@ -33,7 +33,7 @@ var pool = mysql.createPool({
 module.exports = pool;
 </pre>
 
-As stated, the connection is based on a config file we can keep elsewhere. In this example, we use a file that lives in the root of our project, aptly named <i>config.js</i>:
+As stated, the connection is based on a config file we can keep elsewhere. Technically speaking, this is also a module! In this example, we use a file that lives in the root of our project, aptly named <i>config.js</i>:
 
 <pre>
 var config = {};
@@ -64,6 +64,8 @@ config.settings['production'] = {
 		]
 	}	
 };
+
+module.exports = config;
 </pre>
 
 While there's nothing stopping us from hardcoding the connection data in <i>database.js</i>, the advantages in defining this data in a separate file are:
